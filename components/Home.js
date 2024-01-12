@@ -8,7 +8,8 @@ function Home() {
     const [mouse, setMouse] = useState('grab')
   
     useEffect(()=>{
-      fetch(`http://localhost:3000/markers`)
+      fetch('https://notion2map-back.vercel.app/markers')
+      // fetch(`http://localhost:3000/markers`)
           .then(response => response.json())
           .then(data => {
               console.log(data)
